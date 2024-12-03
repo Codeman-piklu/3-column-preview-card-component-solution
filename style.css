@@ -1,0 +1,135 @@
+:root{
+--Brightorange:hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+--Transparentwhite: hsla(0, 0%, 100%, 0.75);
+--Verylightgray: hsl(0, 0%, 95%);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-weight:400;
+    display: flex;
+    font-family: "Big Shoulders Display", serif;
+    align-items: center;
+    justify-content: center;;
+    background-color: var(--Verylightgray);
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 35px;
+    color: var(--Verylightgray);
+    margin-bottom: 25px;
+    transition: 1s;
+}
+img{
+    margin-bottom: 20px;
+    max-width: 60px;
+    transition: 2s;
+    height: auto;
+}
+p{
+    font-family: "Lexend Deca", serif;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color: var(--Transparentwhite);
+    font-size: 11px;
+    line-height: 18px;
+}
+#main{
+    background-color:var(--Transparentwhite);
+    width: 689px;
+    display:flex; 
+}
+.sedans,.suvs,.luxury{
+    padding: 40px;
+    
+}
+.sedans{
+    background-color:var(--Brightorange);
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+    
+}
+.suvs{
+    background-color: var(--Darkcyan); 
+    
+}
+.luxury{
+    background-color: var(--Verydarkcyan);
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+    
+}
+button{
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color:inherit;
+    color: var(--Transparentwhite);
+    border-radius:20px;
+    font-size: 13px;
+    font-weight:400;
+    transition: 0.75s;
+}
+button:hover{
+    color: rgb(157, 255, 0);
+   background-color: rgb(6, 57, 87);
+    border: 1px solid rgb(0, 60, 255);
+    font-weight: 700;
+} 
+h3:hover {
+    color: hsl(0, 70%, 50%);
+}
+
+img:hover {
+    transform:translateX(100px);
+    margin-left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p:hover{
+color: yellow;
+}
+
+
+
+@media screen and (max-width:760px){
+    body{
+        display: block; 
+    } 
+    #main{
+        margin: 0 auto;
+        display:block; 
+        padding: 50px 15px;
+    width: 100%;
+}
+.sedans{
+    border-top-left-radius:5px ;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0; 
+}
+.luxury{
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px; 
+}
+
+    h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+    button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
