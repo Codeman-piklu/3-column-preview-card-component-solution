@@ -31,7 +31,7 @@ Users should be able to:
 ![](./Screenshot%20(4).png)
 
 ### Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/3-column-preview-card-component-solution-qeyQHvcInx))
 - Live Site URL: (https://imaginative-squirrel-9c8e61.netlify.app/))
 
 ## My process
